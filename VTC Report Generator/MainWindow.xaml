@@ -1,0 +1,15 @@
+﻿<Window x:Class="VTC_Report_Generator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VTC_Report_Generator"
+        mc:Ignorable="d"
+        Title="VTC Report Generator" Height="450" Width="800" Icon="BigLogo.png">
+    <Grid>
+        <ListBox HorizontalAlignment="Left" Margin="10,41,0,10" Width="223"/>
+        <Label Content="Video Processing Jobs" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"/>
+        <Button Content="Generate Report" HorizontalAlignment="Left" Margin="238,41,0,0" VerticalAlignment="Top" Width="114"/>
+
+    </Grid>
+</Window>

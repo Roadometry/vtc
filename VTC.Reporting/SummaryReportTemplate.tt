@@ -1,0 +1,124 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="VTC.Common" #>
+<#@ output extension=".html" #>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Summary Report</title>
+
+<link rel="icon" href="./ReportAssets/favicon.ico">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="./ReportAssets/report.js"></script>
+<meta charset="UTF-8">
+<title>TMC</title>
+<link rel="stylesheet" href="ReportAssets/report.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,300italic,500,500italic,700,700italic,900,900italic|Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic|Roboto+Condensed:400,300,300italic,400italic,700,700italic|Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic|Montserrat:400,700|Fjalla+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700|Roboto+Mono:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic|Source+Code+Pro:400,200,300,500,700,600,900|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div class="container" id="main">
+
+    <div id="docheader" class="row">
+        <div class="col">
+            <h4><span class="light">Location: </span><#= Location #></h4>
+            <h4><span class="light">Date: </span><#= VideoTime #></h4>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col">
+            <img id="legend" src="./RegionsLegend.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                <tr>
+                    <#  foreach (ObjectType t in Enum.GetValues(typeof(ObjectType))) { #>
+                        <th scope="col">
+                        <#= t.ToString() #>
+                        </th>
+                    <# } #>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <#  foreach (ObjectType t in Enum.GetValues(typeof(ObjectType))) { #>
+                     <td>
+                        <#= Movements.Where(m => m.TrafficObjectType == t).Count() #>
+                     </td>
+                    <# } #>
+                    <td><#= Movements.Count() #></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <# foreach (string approach in ApproachNames) { #>
+
+        <div class="row mt-5">
+            <div class="col">
+                <h2><#= approach #></h2>
+            </div>
+        </div>
+    
+        <div class="row mb-5">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                    <tr>
+                    <th scope="col"></th>
+                    <#  foreach (string exit in ExitNames) { #>
+                        <th scope="col"><#= exit #></th>
+                    <# } #>
+                    <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <#  foreach (var bin in BinnedMovements15) { #>
+                    <tr>
+                        <th scope="row"><#= bin.Interval.StartTime #></th>
+                        <# foreach(string exit in ExitNames) { #>
+                            <td><#= bin.Where(m => m.Exit == exit && m.Approach == approach).Count() #></td>
+                        <# } #>
+                        <td><#= bin.Where(m => m.Approach == approach).Count() #></td>
+                    </tr>
+                    <# } #>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    <# } #>
+
+</div>
+
+<footer>
+  <p>Counts generated by &nbsp; <img id="logoicon" src="./ReportAssets/favicon.ico"> VTC on <#= DateTime.Now #></p> 
+</footer>
+
+</body>
+
+<#+
+public List<VTC.Common.Movement> Movements;
+public List<VTC.Common.BinnedMovements> BinnedMovements15;
+public string Location = "";
+public DateTime VideoTime;
+public string[] ApproachNames;
+public string[] ExitNames;
+#>

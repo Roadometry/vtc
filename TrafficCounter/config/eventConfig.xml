@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<EventConfig xmlns="http://schemas.datacontract.org/2004/07/VTC" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <ConfigVersion>1</ConfigVersion>
+  
+    <Straight>
+      <Approach>Approach 1</Approach>
+	  <Exit>Exit 1</Exit>
+    </Straight>
+	<Straight>
+      <Approach>Approach 2</Approach>
+	  <Exit>Exit 2</Exit>
+    </Straight>
+	<Straight>
+      <Approach>Approach 3</Approach>
+	  <Exit>Exit 3</Exit>
+    </Straight>
+	<Straight>
+      <Approach>Approach 4</Approach>
+	  <Exit>Exit 4</Exit>
+    </Straight>
+	
+	<Left>
+      <Approach>Approach 1</Approach>
+	  <Exit>Exit 2</Exit>
+    </Left>
+	<Left>
+      <Approach>Approach 2</Approach>
+	  <Exit>Exit 3</Exit>
+    </Left>
+	<Left>
+      <Approach>Approach 3</Approach>
+	  <Exit>Exit 4</Exit>
+    </Left>
+	<Left>
+      <Approach>Approach 4</Approach>
+	  <Exit>Exit 1</Exit>
+    </Left>
+	
+	<Right>
+      <Approach>Approach 1</Approach>
+	  <Exit>Exit 4</Exit>
+    </Right>
+	<Right>
+      <Approach>Approach 2</Approach>
+	  <Exit>Exit 1</Exit>
+    </Right>
+	<Right>
+      <Approach>Approach 3</Approach>
+	  <Exit>Exit 2</Exit>
+    </Right>
+	<Right>
+      <Approach>Approach 4</Approach>
+	  <Exit>Exit 3</Exit>
+    </Right>
+</EventConfig>

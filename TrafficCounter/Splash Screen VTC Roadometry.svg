@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="499"
+   height="399"
+   viewBox="0 0 132.02708 105.56875"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="Splash Screen VTC Roadometry.svg"
+   inkscape:export-filename="C:\VTCProject\vtc_lfs\TrafficCounter\SplashScreenRoadometry.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient4153"
+       inkscape:collect="always">
+      <stop
+         id="stop4155"
+         offset="0"
+         style="stop-color:#d1d1d1;stop-opacity:1;" />
+      <stop
+         id="stop4157"
+         offset="1"
+         style="stop-color:#d1d1d1;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(1.2764628,0,0,1.2764628,-228.42947,-292.73202)"
+       gradientUnits="userSpaceOnUse"
+       y2="1015.239"
+       x2="512.14734"
+       y1="1015.239"
+       x1="-25.253828"
+       id="linearGradient4159"
+       xlink:href="#linearGradient4153"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="matrix(2.4681921,0,0,2.0020267,-686.73638,-1135.8272)"
+       gradientUnits="userSpaceOnUse"
+       y2="1015.239"
+       x2="512.14734"
+       y1="1015.239"
+       x1="-25.253828"
+       id="linearGradient4159-6"
+       xlink:href="#linearGradient4153"
+       inkscape:collect="always" />
+    <filter
+       id="filter4171"
+       inkscape:label="Blur"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur4173"
+         result="fbSourceGraphic"
+         stdDeviation="50 50.53" />
+      <feColorMatrix
+         id="feColorMatrix4179"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feGaussianBlur
+         in="fbSourceGraphic"
+         result="fbSourceGraphic"
+         stdDeviation="50 50.53"
+         id="feGaussianBlur4181" />
+      <feColorMatrix
+         id="feColorMatrix4240"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feGaussianBlur
+         in="fbSourceGraphic"
+         result="blur"
+         stdDeviation="50 50.53"
+         id="feGaussianBlur4242" />
+    </filter>
+    <filter
+       id="filter4175"
+       inkscape:label="Blur"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur4177"
+         result="fbSourceGraphic"
+         stdDeviation="50 50.53" />
+      <feColorMatrix
+         id="feColorMatrix4183"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feGaussianBlur
+         in="fbSourceGraphic"
+         result="fbSourceGraphic"
+         stdDeviation="50 50.53"
+         id="feGaussianBlur4185" />
+      <feColorMatrix
+         id="feColorMatrix4244"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feGaussianBlur
+         in="fbSourceGraphic"
+         result="blur"
+         stdDeviation="50 50.53"
+         id="feGaussianBlur4246" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#6c6c6c"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="206.62083"
+     inkscape:cy="201.37661"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g4576"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(102.4663,-61.957969)">
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,130.8191,-119.28945)"
+       id="layer1-4"
+       inkscape:label="Layer 1">
+      <g
+         id="g4576"
+         transform="translate(-883.52526,28.244383)">
+        <rect
+           style="fill:url(#linearGradient4159);fill-opacity:1;stroke:none;stroke-width:28.96500015;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4171)"
+           id="rect4151"
+           width="685.9726"
+           height="134.74461"
+           x="-260.66501"
+           y="935.81055" />
+        <rect
+           style="fill:url(#linearGradient4159-6);fill-opacity:1;stroke:none;stroke-width:28.96500015;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4175)"
+           id="rect4151-1"
+           width="1326.4093"
+           height="211.33582"
+           x="-749.06769"
+           y="791.04059" />
+        <image
+           y="991.1012"
+           x="438.55045"
+           id="image4144"
+           xlink:href="data:image/png;base64,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 RK5CYII= "
+           preserveAspectRatio="none"
+           height="52.203777"
+           width="52.203777" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="46.293877"
+           y="731.25891"
+           id="text4187"><tspan
+             sodipodi:role="line"
+             id="tspan4189"
+             x="46.293877"
+             y="731.25891"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:61.86133957px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:4.88000011px">VTC</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="235.96016"
+           y="704.24445"
+           id="text4187-0"><tspan
+             sodipodi:role="line"
+             id="tspan4189-8"
+             x="235.96016"
+             y="704.24445"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:4.88000011px">VIDEO TRAFFIC</tspan><tspan
+             sodipodi:role="line"
+             x="235.96016"
+             y="729.24445"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:4.88000011px"
+             id="tspan4209">COUNTER</tspan><tspan
+             sodipodi:role="line"
+             x="235.96016"
+             y="754.24445"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:4.88000011px"
+             id="tspan4236"> </tspan><tspan
+             sodipodi:role="line"
+             x="235.96016"
+             y="779.24445"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:4.88000011px"
+             id="tspan4238"> </tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="9.0340528"
+           y="1016.244"
+           id="text4187-0-0"><tspan
+             sodipodi:role="line"
+             x="9.0340528"
+             y="1016.244"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:4.88000011px"
+             id="tspan4209-7">Roadometry Corporation</tspan><tspan
+             sodipodi:role="line"
+             x="9.0340528"
+             y="1041.244"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:4.88000011px"
+             id="tspan4234">2020</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="12.082093"
+           y="905.61334"
+           id="text4187-0-9"><tspan
+             sodipodi:role="line"
+             x="12.082093"
+             y="905.61334"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.01401329px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:3.90741944px"
+             id="tspan4209-8">https://roadometry.com</tspan><tspan
+             sodipodi:role="line"
+             x="12.082093"
+             y="925.63086"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.01401329px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:3.90741944px"
+             id="tspan4236-2"> </tspan><tspan
+             sodipodi:role="line"
+             x="12.082093"
+             y="945.64838"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.01401329px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:3.90741944px"
+             id="tspan4238-8"> </tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

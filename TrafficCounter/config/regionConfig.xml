@@ -1,0 +1,6 @@
+<RegionConfig xmlns="http://schemas.datacontract.org/2004/07/VTC" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <ApproachExits>
+  </ApproachExits>
+  <RoiMask xmlns:a="http://schemas.datacontract.org/2004/07/System.Drawing">
+  </RoiMask>
+</RegionConfig>

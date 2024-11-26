@@ -1,0 +1,2 @@
+BurbankIP,http://24.221.54.186:8000/-wvhttp-01-/GetOneShot?image_size=640x480&frame_count=1000000000
+TokyoIP,http://114.160.23.156:80/-wvhttp-01-/GetOneShot?image_size=640x480&frame_count=1000000000

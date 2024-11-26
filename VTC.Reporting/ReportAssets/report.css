@@ -1,0 +1,85 @@
+#legend {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+#main {
+	margin-bottom:10em;
+}
+
+#logoicon{
+	width:20px;
+	height:20px;
+	margin-top:-4px;
+}
+
+.summarystats {
+	font-weight:500;
+}
+
+footer {
+	margin: 0 auto;
+	width: 50%;
+	margin-bottom:3em;
+	font-size: 125%;
+}
+
+h3 {
+	font-size: 23px;
+}
+
+#docheader {
+	margin-top: 3em;
+	/* font-family:'Roboto Condensed', sans-serif; */
+}
+
+.top-buffer {
+	margin-top:5em;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+table {
+	margin-bottom:2em;
+	font-family:'Roboto Condensed', sans-serif;
+}
+
+td {
+	/* min-width:5em; */
+	margin-left:5px;
+	margin-right:5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: #ccc;
+}
+
+.time {
+	font-weight:300;
+	margin-right:5em;
+	padding-right:1em;
+	font-family:'Roboto Condensed';
+}
+
+.light {
+	font-weight:300;
+}
+
+.turnlabel {
+	font-weight:300;
+	width:4em;
+	font-size:14px;
+	font-family:'Roboto Condensed';
+}
+
+.unused {
+	/* font-weight:300; */
+	opacity: 0.4;
+}
+
+
+

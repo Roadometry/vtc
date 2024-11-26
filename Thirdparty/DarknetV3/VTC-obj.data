@@ -1,0 +1,5 @@
+classes=6
+train = data\VTC-train.txt
+valid = data\VTC-test.txt
+names = data\VTC-obj.names
+backup = backup\

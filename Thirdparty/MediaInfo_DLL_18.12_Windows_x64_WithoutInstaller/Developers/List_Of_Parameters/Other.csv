@@ -1,0 +1,115 @@
+Count;;;N NI;;;Count of objects available in this stream
+Status;;;N NI;;;bit field (0=IsAccepted, 1=IsFilled, 2=IsUpdated, 3=IsFinished)
+StreamCount;;;N NI;;;Count of streams of that kind available
+StreamKind;Other;;N NT;;;Stream type name
+StreamKind/String;;;N NT;;;Stream type name
+StreamKindID;;;N NI;;;Number of the stream (base=0)
+StreamKindPos;;;N NI;;;When multiple streams, number of the stream (base=1)
+StreamOrder;;;N YIY;;;Stream order in the file, whatever is the kind of stream (base=0)
+FirstPacketOrder;;;N YIY;;;Order of the first fully decodable packet met in the file, whatever is the kind of stream (base=0)
+Inform;;;N NT;;;Last **Inform** call
+ID;;;N YTY;;;The ID for this stream in this file
+ID/String;;;Y NT;;;The ID for this stream in this file
+OriginalSourceMedium_ID;;;N YTY;;;The ID for this stream in the original medium of the material
+OriginalSourceMedium_ID/String;;;Y NT;;;The ID for this stream in the original medium of the material
+UniqueID;;;N YTY;;;The unique ID for this stream, should be copied with stream copy
+UniqueID/String;;;Y NT;;;The unique ID for this stream, should be copied with stream copy
+MenuID;;;N YTY;;;The menu ID for this stream in this file
+MenuID/String;;;Y NT;;;The menu ID for this stream in this file
+Type;;;Y YTY;;;Type
+Format;;;N YTY;;;Format used
+Format/String;;;Y NT;;;Format used + additional features
+Format/Info;;;N NT;;;Info about Format
+Format/Url;;;N NT;;;Link
+Format_Commercial;;;N NT;;;Commercial name used by vendor for theses setings or Format field if there is no difference
+Format_Commercial_IfAny;;;Y YTY;;;Commercial name used by vendor for theses setings if there is one
+Format_Version;;;Y NTY;;;Version of this format
+Format_Profile;;;Y NTY;;;Profile of the Format
+Format_Compression;;;Y NTY;;;Compression method used;;
+Format_Settings;;;Y NTY;;;Settings needed for decoder used
+Format_AdditionalFeatures;;;N YTY;;;Format features needed for fully supporting the content
+MuxingMode;;;Y YTY;;;How this file is muxed in the container
+CodecID;;;Y YTY;;;Codec ID (found in some containers);;
+CodecID/String;;;Y NT;;;Codec ID (found in some containers);;
+CodecID/Info;;;Y NT;;;Info about this codec
+CodecID/Hint;;;Y NT;;;A hint/popular name for this codec
+CodecID/Url;;;N NT;;;A link to more details about this codec ID
+CodecID_Description;;;Y YT;;;Manual description given by the container
+Duration;; ms;N YFY;;;Play time of the stream in ms
+Duration/String;;;Y NT;;;Play time in format : XXx YYy only, YYy omited if zero
+Duration/String1;;;N NT;;;Play time in format : HHh MMmn SSs MMMms, XX omited if zero
+Duration/String2;;;N NT;;;Play time in format : XXx YYy only, YYy omited if zero
+Duration/String3;;;N NT;;;Play time in format : HH:MM:SS.MMM
+Duration/String4;;;N NT;;;Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available
+Duration/String5;;;N NT;;;Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)
+Duration_Start;;;Y YTY;;;
+Duration_End;;;Y YTY;;;
+FrameRate;; fps;N YFY;;;Frames per second
+FrameRate/String;;;Y NT;;;Frames per second (with measurement)
+FrameRate_Num;;;N NFN;;;Frames per second, numerator
+FrameRate_Den;;;N NFN;;;Frames per second, denominator
+FrameCount;;;N NIY;;;Number of frames
+Delay;; ms;N NFY;;;Delay fixed in the stream (relative) IN MS;
+Delay/String;;;N NT;;;Delay with measurement;
+Delay/String1;;;N NT;;;Delay with measurement;
+Delay/String2;;;N NT;;;Delay with measurement;
+Delay/String3;;;N NT;;;Delay in format : HH:MM:SS.MMM;
+Delay/String4;;;N NT;;;Delay in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available
+Delay/String5;;;N NT;;;Delay in format : HH:MM:SS.mmm (HH:MM:SS:FF)
+Delay_Settings;;;N NT;;;Delay settings (in case of timecode for example);
+Delay_DropFrame;;;N NT;;;Delay drop frame;
+Delay_Source;;;N NT;;;Delay source (Container or Stream or empty);
+Delay_Source/String;;;N NT;;;Delay source (Container or Stream or empty);
+Delay_Original;; ms;N NIY;;;Delay fixed in the raw stream (relative) IN MS;
+Delay_Original/String;;;N NT;;;Delay with measurement;
+Delay_Original/String1;;;N NT;;;Delay with measurement;
+Delay_Original/String2;;;N NT;;;Delay with measurement;
+Delay_Original/String3;;;N NT;;;Delay in format: HH:MM:SS.MMM;;
+Delay_Original/String4;;;N NT;;;Delay in format: HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available;
+Delay_Original/String5;;;N NT;;;Delay in format : HH:MM:SS.mmm (HH:MM:SS:FF)
+Delay_Original_Settings;;;N NT;;;Delay settings (in case of timecode for example);;
+Delay_Original_DropFrame;;;N NT;;;Delay drop frame info;
+Delay_Original_Source;;;N NT;;;Delay source (Stream or empty);
+Video_Delay;; ms;N NI;;;Delay fixed in the stream (absolute / video)
+Video_Delay/String;;;Y NT;;;
+Video_Delay/String1;;;N NT;;;
+Video_Delay/String2;;;N NT;;;
+Video_Delay/String3;;;N NT;;;
+Video_Delay/String4;;;N NT;;;
+Video_Delay/String5;;;N NT;;;
+Video0_Delay;; ms;N NI;;;Deprecated, do not use in new projects
+Video0_Delay/String;;;N NT;;;Deprecated, do not use in new projects
+Video0_Delay/String1;;;N NT;;;Deprecated, do not use in new projects
+Video0_Delay/String2;;;N NT;;;Deprecated, do not use in new projects
+Video0_Delay/String3;;;N NT;;;Deprecated, do not use in new projects
+Video0_Delay/String4;;;N NT;;;Deprecated, do not use in new projects
+Video0_Delay/String5;;;N NT;;;Deprecated, do not use in new projects
+TimeStamp_FirstFrame;; ms;N YFY;;;TimeStamp fixed in the stream (relative) IN MS;
+TimeStamp_FirstFrame/String;;;Y NT;;;TimeStamp with measurement;
+TimeStamp_FirstFrame/String1;;;N NT;;;TimeStamp with measurement;
+TimeStamp_FirstFrame/String2;;;N NT;;;TimeStamp with measurement;
+TimeStamp_FirstFrame/String3;;;N NT;;;TimeStamp in format : HH:MM:SS.MMM;
+TimeStamp_FirstFrame/String4;;;N NT;;;TimeStamp in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available
+TimeStamp_FirstFrame/String5;;;N NT;;;TimeStamp in format : HH:MM:SS.mmm (HH:MM:SS:FF)
+TimeCode_FirstFrame;;;Y YCY;;;Time code in HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available format
+TimeCode_Settings;;;Y YTY;;;Time code settings
+TimeCode_Striped;;Yes;N YTY;;;Time code is striped (only 1st time code, no discontinuity)
+TimeCode_Striped/String;;;Y NT;;;Time code is striped (only 1st time code, no discontinuity)
+Title;;;Y YTY;;;Name of this menu
+Language;;;N YTY;;;Language (2-letter ISO 639-1 if exists, else 3-letter ISO 639-2, and with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn)
+Language/String;;;Y NT;;;Language (full)
+Language/String1;;;N NT;;;Language (full);;
+Language/String2;;;N NT;;;Language (2-letter ISO 639-1 if exists, else empty);;
+Language/String3;;;N NT;;;Language (3-letter ISO 639-2 if exists, else empty);;
+Language/String4;;;N NT;;;Language (2-letter ISO 639-1 if exists with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn, else empty);;
+Language_More;;;Y YTY;;;More info about Language (e.g. Director's Comment);;
+ServiceKind;;;N YTY;;;Service kind, e.g. visually impaired, commentary, voice over;;
+ServiceKind/String;;;Y NT;;;Service kind (full);;
+Disabled;;Yes;N YTY;;;Set if that track should not be used
+Disabled/String;;;Y NT;;;Set if that track should not be used
+Default;;Yes;N YTY;;;Set if that track should be used if no language found matches the user preference.
+Default/String;;;Y NT;;;Set if that track should be used if no language found matches the user preference.
+Forced;;Yes;N YTY;;;Set if that track should be used if no language found matches the user preference.
+Forced/String;;;Y NT;;;Set if that track should be used if no language found matches the user preference.
+AlternateGroup;;Yes;N YTY;;;Number of a group in order to provide versions of the same track
+AlternateGroup/String;;;Y NT;;;Number of a group in order to provide versions of the same track

@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A2C2CF3-4F2C-43B5-B34C-A4A24B60B093}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTC</RootNamespace>
+    <AssemblyName>VTC</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>C:\Users\asfarley\Desktop\vtc\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3DAF5F80C213373F559AE7D373014747D07546A7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TrafficCounter_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DirectShowLib-2005, Version=2.1.0.0, Culture=neutral, PublicKeyToken=67e7b740cdfc2d3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Thirdparty\DirectShowLibNET\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Actors\ConfigurationActor.cs" />
+    <Compile Include="Actors\FrameGrabActor.cs" />
+    <Compile Include="Actors\LoggingActor.cs" />
+    <Compile Include="Actors\ProcessingActor.cs" />
+    <Compile Include="Actors\SequencingActor.cs" />
+    <Compile Include="Actors\SupervisorActor.cs" />
+    <Compile Include="CaptureSource\SystemCamera.cs" />
+    <Compile Include="CaptureSource\VideoFileCapture.cs" />
+    <Compile Include="CaptureSource\CaptureSource.cs" />
+    <Compile Include="CaptureSource\IpCamera.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Messages\BeginSplitVideoMessage.cs" />
+    <Compile Include="Messages\InitializedNotificationMessage.cs" />
+    <Compile Include="Messages\ClearStatsMessage.cs" />
+    <Compile Include="Messages\InitializationCompleteMessage.cs" />
+    <Compile Include="Messages\ResetDatabaseMessage.cs" />
+    <Compile Include="Messages\NewBatchJobMessage.cs" />
+    <Compile Include="Messages\RequestVideoSourceMessage.cs" />
+    <Compile Include="Messages\LoadConfigurationByNameMessage.cs" />
+    <Compile Include="Messages\FlushBuffersMessage.cs" />
+    <Compile Include="Messages\UpdateFramerateMessage.cs" />
+    <Compile Include="Messages\DashboardHeartbeatMessage.cs" />
+    <Compile Include="Messages\ActorHeartbeatMessage.cs" />
+    <Compile Include="Messages\CheckActorLiveness.cs" />
+    <Compile Include="Messages\RestartFrameGrabActorMessage.cs" />
+    <Compile Include="Messages\RequestConfigurationMessage.cs" />
+    <Compile Include="Messages\ValidateConfigurationMessage.cs" />
+    <Compile Include="Messages\CheckConnectivityMessage.cs" />
+    <Compile Include="Messages\FrameCountMessage.cs" />
+    <Compile Include="Messages\GenerateDailyReportMessage.cs" />
+    <Compile Include="Messages\LoadUserConfigMessage.cs" />
+    <Compile Include="Messages\UpdateDebugHandlerMessage.cs" />
+    <Compile Include="Messages\CopyGroundtruthMessage.cs" />
+    <Compile Include="Messages\ActorMessage.cs" />
+    <Compile Include="Messages\ActorStatusMessage.cs" />
+    <Compile Include="Messages\CalculateFrameRateMessage.cs" />
+    <Compile Include="Messages\CamerasMessage.cs" />
+    <Compile Include="Messages\CaptureSourceCompleteMessage.cs" />
+    <Compile Include="Messages\ConfigurationActorMessage.cs" />
+    <Compile Include="Messages\CreateAllActorsMessage.cs" />
+    <Compile Include="Messages\CurrentJobMessage.cs" />
+    <Compile Include="Messages\EventConfigMessage.cs" />
+    <Compile Include="Messages\FileCreationTimeMessage.cs" />
+    <Compile Include="Messages\HandleClassIDMappingMessage.cs" />
+    <Compile Include="Messages\LogPerformanceMessage.cs" />
+    <Compile Include="Messages\OpenRegionConfigurationScreenMessage.cs" />
+    <Compile Include="Messages\RegionConfigLookupResponseMessage.cs" />
+    <Compile Include="Messages\RegionConfigNameLookupMessage.cs" />
+    <Compile Include="Messages\SupervisorActorMessage.cs" />
+    <Compile Include="Messages\SequencingActorMessage.cs" />
+    <Compile Include="Messages\HandleUpdatedBackgroundFrameMessage.cs" />
+    <Compile Include="Messages\FrameMessage.cs" />
+    <Compile Include="Messages\GenerateReportMessage.cs" />
+    <Compile Include="Messages\GetNextFrameMessage.cs" />
+    <Compile Include="Messages\FrameGrabActorMessage.cs" />
+    <Compile Include="Messages\LoggingActorMessage.cs" />
+    <Compile Include="Messages\LogUserMessage.cs" />
+    <Compile Include="Messages\LogMessage.cs" />
+    <Compile Include="Messages\NewProcessingActorMessage.cs" />
+    <Compile Include="Messages\NewVideoSourceMessage.cs" />
+    <Compile Include="Messages\ProcessNextFrameMessage.cs" />
+    <Compile Include="Messages\RegionConfigurationMessage.cs" />
+    <Compile Include="Messages\RequestBackgroundFrameMessage.cs" />
+    <Compile Include="Messages\StringMessage.cs" />
+    <Compile Include="Messages\TrackingEventMessage.cs" />
+    <Compile Include="Messages\UpdateActorStatusHandlerMessage.cs" />
+    <Compile Include="Messages\RequestUpdateClassIDMappingMessage.cs" />
+    <Compile Include="Messages\UpdateRegionConfigurationMessage.cs" />
+    <Compile Include="Messages\UpdateInfoUiHandlerMessage.cs" />
+    <Compile Include="Messages\UpdateStatsUiHandlerMessage.cs" />
+    <Compile Include="Messages\UpdateUiAccessoryHandlerMessage.cs" />
+    <Compile Include="Messages\UpdateUiHandlerMessage.cs" />
+    <Compile Include="Messages\UpdateVideoDimensionsMessage.cs" />
+    <Compile Include="Messages\UpdateVideoPropertiesMessage.cs" />
+    <Compile Include="Messages\SplitVideoJobsMessage.cs" />
+    <Compile Include="Messages\VideoJobsMessage.cs" />
+    <Compile Include="Messages\CheckVideoProcessingRequestsIPCMessage.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegionConfiguration\FileRegionConfigDAL.cs" />
+    <Compile Include="RegionConfiguration\InputPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegionConfiguration\InputPrompt.Designer.cs">
+      <DependentUpon>InputPrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegionConfiguration\ExamplePathCreatePrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegionConfiguration\ExamplePathCreatePrompt.Designer.cs">
+      <DependentUpon>ExamplePathCreatePrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegionConfiguration\IRegionConfigDataAccessLayer.cs" />
+    <Compile Include="RegionConfiguration\IRegionConfigSelectorView.cs" />
+    <Compile Include="RegionConfiguration\ExamplePathBuilderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegionConfiguration\ExamplePathBuilderControl.Designer.cs">
+      <DependentUpon>ExamplePathBuilderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegionConfiguration\PolygonBuilderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegionConfiguration\PolygonBuilderControl.Designer.cs">
+      <DependentUpon>PolygonBuilderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionConfiguration\RegionConfigSelectorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegionConfiguration\RegionConfigSelectorControl.Designer.cs">
+      <DependentUpon>RegionConfigSelectorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegionConfiguration\RegionConfigSelectorModel.cs" />
+    <Compile Include="RegionConfiguration\RegionConfigSelectorView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegionConfiguration\RegionConfigSelectorView.Designer.cs">
+      <DependentUpon>RegionConfigSelectorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegionConfiguration\RegionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegionConfiguration\RegionEditor.Designer.cs">
+      <DependentUpon>RegionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsEditor.Designer.cs">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrafficCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrafficCounter.Designer.cs">
+      <DependentUpon>TrafficCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TrafficCounterUIUpdateInfo.cs" />
+    <Compile Include="UserConfiguration\FileUserConfigDAL.cs" />
+    <Compile Include="UserConfiguration\IUserConfigDataAccessLayer.cs" />
+    <Compile Include="VideoDateTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoDateTimeForm.Designer.cs">
+      <DependentUpon>VideoDateTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoDisplay.Designer.cs">
+      <DependentUpon>VideoDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoMux.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoMux.Designer.cs">
+      <DependentUpon>VideoMux.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionConfiguration\InputPrompt.resx">
+      <DependentUpon>InputPrompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionConfiguration\ExamplePathCreatePrompt.resx">
+      <DependentUpon>ExamplePathCreatePrompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionConfiguration\ExamplePathBuilderControl.resx">
+      <DependentUpon>ExamplePathBuilderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionConfiguration\PolygonBuilderControl.resx">
+      <DependentUpon>PolygonBuilderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionConfiguration\RegionConfigSelectorControl.resx">
+      <DependentUpon>RegionConfigSelectorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionConfiguration\RegionConfigSelectorView.resx">
+      <DependentUpon>RegionConfigSelectorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionConfiguration\RegionEditor.resx">
+      <DependentUpon>RegionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsEditor.resx">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrafficCounter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrafficCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoDateTimeForm.resx">
+      <DependentUpon>VideoDateTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoDisplay.resx">
+      <DependentUpon>VideoDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoMux.resx">
+      <DependentUpon>VideoMux.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\eventConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\regionConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Logo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MediaInfo.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\greenledoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="config\regionConfig.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Indicators\Indicators.csproj">
+      <Project>{eab5a391-2876-44f9-be43-163753f00450}</Project>
+      <Name>Indicators</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTC.Classifier\VTC.Classifier.csproj">
+      <Project>{73bbb56a-d39c-459a-bed0-ebeff159c22b}</Project>
+      <Name>VTC.Classifier</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTC.Common\VTC.Common.csproj">
+      <Project>{4c7016df-c1a1-485d-846c-22c7eabb4368}</Project>
+      <Name>VTC.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTC.db\VTC.db.csproj">
+      <Project>{221f2f6b-13b9-4859-acd6-3c104a22da3d}</Project>
+      <Name>VTC.db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTC.Kernel\VTC.Kernel.csproj">
+      <Project>{d8a795d9-f343-4db5-a993-eb35d1a4c182}</Project>
+      <Name>VTC.Kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTC.Reporting\VTC.Reporting.csproj">
+      <Project>{0ce41230-5e22-4b13-8520-ae201eed01bb}</Project>
+      <Name>VTC.Reporting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Accord.Video">
+      <Version>3.8.0</Version>
+    </PackageReference>
+    <PackageReference Include="Akka">
+      <Version>1.4.16</Version>
+    </PackageReference>
+    <PackageReference Include="Emgu.CV">
+      <Version>4.5.1.4349</Version>
+    </PackageReference>
+    <PackageReference Include="Emgu.CV.Bitmap">
+      <Version>4.5.1.4349</Version>
+    </PackageReference>
+    <PackageReference Include="Emgu.CV.runtime.windows">
+      <Version>4.5.1.4349</Version>
+    </PackageReference>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="GeoAPI">
+      <Version>1.7.5</Version>
+    </PackageReference>
+    <PackageReference Include="LicenseSpot.IPManager">
+      <Version>2.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="MediaInfo.DotNetWrapper">
+      <Version>1.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="MediaInfo.Native">
+      <Version>20.9.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ApplicationInsights.WindowsServer">
+      <Version>2.16.0</Version>
+    </PackageReference>
+    <PackageReference Include="NetTopologySuite">
+      <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="NetTopologySuite.CoordinateSystems">
+      <Version>1.15.3</Version>
+    </PackageReference>
+    <PackageReference Include="NetTopologySuite.Core">
+      <Version>1.15.3</Version>
+    </PackageReference>
+    <PackageReference Include="NLog">
+      <Version>4.7.7</Version>
+    </PackageReference>
+    <PackageReference Include="Npgsql">
+      <Version>5.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="NvAPIWrapper.Net">
+      <Version>0.8.1.101</Version>
+    </PackageReference>
+    <PackageReference Include="Sentry">
+      <Version>3.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="System.Configuration.ConfigurationManager">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <Version>1.0.113.7</Version>
+    </PackageReference>
+    <PackageReference Include="System.Diagnostics.DiagnosticSource">
+      <Version>5.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Drawing.Common">
+      <Version>5.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>5.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Threading.Channels">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="ZedGraph">
+      <Version>5.1.7</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
